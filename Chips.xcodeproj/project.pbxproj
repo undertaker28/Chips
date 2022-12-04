@@ -11,6 +11,7 @@
 		E9A86258293CDD21008F237A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86257293CDD21008F237A /* ContentView.swift */; };
 		E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A86259293CDD22008F237A /* Assets.xcassets */; };
 		E9A8625D293CDD22008F237A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A8625C293CDD22008F237A /* Preview Assets.xcassets */; };
+		E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86264293CEEA0008F237A /* ChipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E9A86257293CDD21008F237A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9A86259293CDD22008F237A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A8625C293CDD22008F237A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9A86264293CEEA0008F237A /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		E9A86254293CDD21008F237A /* Chips */ = {
 			isa = PBXGroup;
 			children = (
+				E9A86263293CEE5A008F237A /* Models */,
 				E9A86255293CDD21008F237A /* ChipsApp.swift */,
 				E9A86257293CDD21008F237A /* ContentView.swift */,
 				E9A86259293CDD22008F237A /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				E9A8625C293CDD22008F237A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9A86263293CEE5A008F237A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9A86264293CEEA0008F237A /* ChipModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				E9A86258293CDD21008F237A /* ContentView.swift in Sources */,
 				E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */,
+				E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
