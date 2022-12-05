@@ -16,6 +16,7 @@
 		E9A8626C293CF19D008F237A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626B293CF19D008F237A /* DataModel.swift */; };
 		E9A8626E293CF46F008F237A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626D293CF46F008F237A /* Constants.swift */; };
 		E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264D293E27F000F64C30 /* TopicChipView.swift */; };
+		E9F62650293E446100F64C30 /* TopicsChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264F293E446100F64C30 /* TopicsChipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E9A8626B293CF19D008F237A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E9A8626D293CF46F008F237A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9F6264D293E27F000F64C30 /* TopicChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipView.swift; sourceTree = "<group>"; };
+		E9F6264F293E446100F64C30 /* TopicsChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsChipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				E9A86257293CDD21008F237A /* ContentView.swift */,
 				E9F6264D293E27F000F64C30 /* TopicChipView.swift */,
+				E9F6264F293E446100F64C30 /* TopicsChipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F62650293E446100F64C30 /* TopicsChipView.swift in Sources */,
 				E9A8626C293CF19D008F237A /* DataModel.swift in Sources */,
 				E9A86258293CDD21008F237A /* ContentView.swift in Sources */,
 				E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */,
