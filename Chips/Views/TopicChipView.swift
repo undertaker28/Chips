@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct TopicChipView: View {
-    let titleKey: String
+    let topicName: String
+    let id: Int
     @State var isSelected: Bool
+    @StateObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         HStack {
-            Text(titleKey)
+            Text(topicName)
                 .font(.system(size: 16))
                 .foregroundColor(Color.white)
             HStack {
@@ -34,6 +36,7 @@ struct TopicChipView: View {
                 .stroke(lineWidth: 0)
         ).onTapGesture {
             isSelected.toggle()
+            isSelected ? topicsChipViewModel.addChip(topicName: topicName, id: id) : topicsChipViewModel.removeChip(id: id)
         }
         .animation(.easeInOut, value: isSelected)
     }
@@ -44,7 +47,7 @@ struct TopicChipView_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            TopicChipView(titleKey: "Юмор", isSelected: false)
+            TopicChipView(topicName: "Юмор", id: 1, isSelected: false)
         }
     }
 }

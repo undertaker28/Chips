@@ -10,5 +10,5 @@ import SwiftUI
 struct ChipModel: Identifiable {
     let id = UUID()
     @State var isSelected: Bool
-    let titleKey: String
+    let topicName: String
 }

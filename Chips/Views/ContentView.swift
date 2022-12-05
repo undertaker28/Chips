@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel = ChipsViewModel()
+    @StateObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         ZStack {
             Color.black
@@ -28,7 +28,7 @@ struct ContentView: View {
                     .cornerRadius(40)
                 }
                 ScrollView {
-                    TopicsChipView(viewModel: viewModel)
+                    TopicsChipView(topicsChipViewModel: topicsChipViewModel)
                 }
                 HStack {
                     Spacer()

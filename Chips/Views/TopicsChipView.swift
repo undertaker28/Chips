@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct TopicsChipView: View {
-    @ObservedObject var viewModel = ChipsViewModel()
+    @ObservedObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         var width = CGFloat.zero
         var height = CGFloat.zero
         return GeometryReader { geo in
             ZStack(alignment: .topLeading, content: {
-                ForEach(viewModel.chips) { chipsData in
-                    TopicChipView(titleKey: chipsData.titleKey,
+                ForEach(Array(topicsChipViewModel.chips.enumerated()), id: \.offset) { (index, chipsData) in
+                    TopicChipView(topicName: chipsData.topicName, id: index,
                                   isSelected: chipsData.isSelected)
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 8))
                     .alignmentGuide(.leading) { dimension in
@@ -25,12 +25,12 @@ struct TopicsChipView: View {
                         }
                         
                         let result = width
-                        width = chipsData.id == viewModel.chips.last!.id ? 0 : width - dimension.width
+                        width = chipsData.id == topicsChipViewModel.chips.last!.id ? 0 : width - dimension.width
                         return result
                     }
                     .alignmentGuide(.top) { dimension in
                         let result = height
-                        if chipsData.id == viewModel.chips.last!.id {
+                        if chipsData.id == topicsChipViewModel.chips.last!.id {
                             height = 0
                         }
                         return result
