@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ChipsViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Отметьте то, что вам интересно, чтобы настроить Дзен")
+                        .padding(EdgeInsets(top: 16, leading: 16, bottom: 8, trailing: 12))
+                        .foregroundColor(Color("Title"))
+                    Button(action: {}) {
+                        Text("Позже")
+                            .font(.system(size: 16))
+                            .foregroundColor(Color.white)
+                    }
+                    .padding(EdgeInsets(top: 11, leading: 13, bottom: 11, trailing: 13))
+                    .background(Color("HeaderChip"))
+                    .cornerRadius(40)
+                }
+                ScrollView {
+                    TopicsChipView(viewModel: viewModel)
+                }
+                HStack {
+                    Spacer()
+                    Button(action: {}) {
+                        Text("Продолжить")
+                            .bold()
+                            .font(.system(size: 18))
+                            .padding(EdgeInsets(top: 29, leading: 51, bottom: 29, trailing: 51))
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                            .cornerRadius(74)
+                    }
+                    Spacer()
+                }
+            }
         }
-        .padding()
     }
 }
 
