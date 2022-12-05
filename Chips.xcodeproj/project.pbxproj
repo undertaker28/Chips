@@ -15,6 +15,7 @@
 		E9A8626A293CF05B008F237A /* ChipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86269293CF05B008F237A /* ChipsViewModel.swift */; };
 		E9A8626C293CF19D008F237A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626B293CF19D008F237A /* DataModel.swift */; };
 		E9A8626E293CF46F008F237A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626D293CF46F008F237A /* Constants.swift */; };
+		E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264D293E27F000F64C30 /* TopicChipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E9A86269293CF05B008F237A /* ChipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsViewModel.swift; sourceTree = "<group>"; };
 		E9A8626B293CF19D008F237A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E9A8626D293CF46F008F237A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E9F6264D293E27F000F64C30 /* TopicChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,10 @@
 		E9A86254293CDD21008F237A /* Chips */ = {
 			isa = PBXGroup;
 			children = (
+				E9F6264C293E27D800F64C30 /* Views */,
 				E9A86266293CEF73008F237A /* ViewModels */,
 				E9A86263293CEE5A008F237A /* Models */,
 				E9A86255293CDD21008F237A /* ChipsApp.swift */,
-				E9A86257293CDD21008F237A /* ContentView.swift */,
 				E9A86259293CDD22008F237A /* Assets.xcassets */,
 				E9A8625B293CDD22008F237A /* Preview Content */,
 				E9A8626D293CF46F008F237A /* Constants.swift */,
@@ -93,6 +95,15 @@
 				E9A86269293CF05B008F237A /* ChipsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9F6264C293E27D800F64C30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9A86257293CDD21008F237A /* ContentView.swift */,
+				E9F6264D293E27F000F64C30 /* TopicChipView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				E9A86258293CDD21008F237A /* ContentView.swift in Sources */,
 				E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */,
 				E9A8626A293CF05B008F237A /* ChipsViewModel.swift in Sources */,
+				E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */,
 				E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */,
 				E9A8626E293CF46F008F237A /* Constants.swift in Sources */,
 			);
