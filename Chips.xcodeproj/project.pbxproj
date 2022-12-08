@@ -10,11 +10,12 @@
 		E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86255293CDD21008F237A /* ChipsApp.swift */; };
 		E9A86258293CDD21008F237A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86257293CDD21008F237A /* ContentView.swift */; };
 		E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A86259293CDD22008F237A /* Assets.xcassets */; };
-		E9A8625D293CDD22008F237A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A8625C293CDD22008F237A /* Preview Assets.xcassets */; };
+		E9A8625D293CDD22008F237A /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A8625C293CDD22008F237A /* PreviewAssets.xcassets */; };
 		E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86264293CEEA0008F237A /* ChipModel.swift */; };
 		E9A8626A293CF05B008F237A /* TopicsChipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */; };
 		E9A8626C293CF19D008F237A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626B293CF19D008F237A /* DataModel.swift */; };
 		E9A8626E293CF46F008F237A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626D293CF46F008F237A /* Constants.swift */; };
+		E9D51FC72942826600ADCADF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D51FC62942826600ADCADF /* Colors.xcassets */; };
 		E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264D293E27F000F64C30 /* TopicChipView.swift */; };
 		E9F62650293E446100F64C30 /* TopicsChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264F293E446100F64C30 /* TopicsChipView.swift */; };
 /* End PBXBuildFile section */
@@ -24,11 +25,12 @@
 		E9A86255293CDD21008F237A /* ChipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsApp.swift; sourceTree = "<group>"; };
 		E9A86257293CDD21008F237A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9A86259293CDD22008F237A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9A8625C293CDD22008F237A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9A8625C293CDD22008F237A /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		E9A86264293CEEA0008F237A /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
 		E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsChipViewModel.swift; sourceTree = "<group>"; };
 		E9A8626B293CF19D008F237A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E9A8626D293CF46F008F237A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E9D51FC62942826600ADCADF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E9F6264D293E27F000F64C30 /* TopicChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipView.swift; sourceTree = "<group>"; };
 		E9F6264F293E446100F64C30 /* TopicsChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsChipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,20 +68,18 @@
 				E9F6264C293E27D800F64C30 /* Views */,
 				E9A86266293CEF73008F237A /* ViewModels */,
 				E9A86263293CEE5A008F237A /* Models */,
-				E9A86255293CDD21008F237A /* ChipsApp.swift */,
-				E9A86259293CDD22008F237A /* Assets.xcassets */,
-				E9A8625B293CDD22008F237A /* Preview Content */,
-				E9A8626D293CF46F008F237A /* Constants.swift */,
+				E9D51FC42942822C00ADCADF /* Resources */,
+				E9A8625B293CDD22008F237A /* PreviewContent */,
 			);
 			path = Chips;
 			sourceTree = "<group>";
 		};
-		E9A8625B293CDD22008F237A /* Preview Content */ = {
+		E9A8625B293CDD22008F237A /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
-				E9A8625C293CDD22008F237A /* Preview Assets.xcassets */,
+				E9A8625C293CDD22008F237A /* PreviewAssets.xcassets */,
 			);
-			path = "Preview Content";
+			path = PreviewContent;
 			sourceTree = "<group>";
 		};
 		E9A86263293CEE5A008F237A /* Models */ = {
@@ -97,6 +97,25 @@
 				E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E9D51FC42942822C00ADCADF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9D51FC52942823800ADCADF /* Assets */,
+				E9A86255293CDD21008F237A /* ChipsApp.swift */,
+				E9A8626D293CF46F008F237A /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9D51FC52942823800ADCADF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E9A86259293CDD22008F237A /* Assets.xcassets */,
+				E9D51FC62942826600ADCADF /* Colors.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		E9F6264C293E27D800F64C30 /* Views */ = {
@@ -167,7 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9A8625D293CDD22008F237A /* Preview Assets.xcassets in Resources */,
+				E9D51FC72942826600ADCADF /* Colors.xcassets in Resources */,
+				E9A8625D293CDD22008F237A /* PreviewAssets.xcassets in Resources */,
 				E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +334,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chips/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chips/PreviewContent\"";
 				DEVELOPMENT_TEAM = G4T7QK2U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -343,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chips/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Chips/PreviewContent\"";
 				DEVELOPMENT_TEAM = G4T7QK2U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

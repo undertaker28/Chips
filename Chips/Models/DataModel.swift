@@ -8,9 +8,9 @@
 import Foundation
 
 struct DataModel {
-    var data = allChips
+    var data = Data.allChips
     
-    init(data: [String] = allChips) {
+    init(data: [String] = Data.allChips) {
         self.data = data
     }
 }
