@@ -16,10 +16,10 @@ class TopicsChipViewModel: ObservableObject {
     }
     
     func initChips() {
-        var selectedChips: [String: Int] = userDefaults.object(forKey: "selectedChips") as? [String: Int] ?? [:]
+        let selectedChips: [String: Int] = userDefaults.object(forKey: "selectedChips") as? [String: Int] ?? [:]
         var isSelected: Bool
         for (index, chip) in DataModel().data.enumerated() {
-            isSelected = selectedChips["\(chip)\(index)"] != nil ? true : false
+            isSelected = selectedChips["\(chip)\(index)"] != nil
             chips.append(ChipModel(isSelected: isSelected, topicName: chip))
         }
     }
