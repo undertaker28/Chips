@@ -14,7 +14,7 @@
 		E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A86259293CDD22008F237A /* Assets.xcassets */; };
 		E9A8625D293CDD22008F237A /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A8625C293CDD22008F237A /* PreviewAssets.xcassets */; };
 		E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86264293CEEA0008F237A /* ChipModel.swift */; };
-		E9A8626A293CF05B008F237A /* TopicsChipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */; };
+		E9A8626A293CF05B008F237A /* TopicChipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86269293CF05B008F237A /* TopicChipsViewModel.swift */; };
 		E9A8626C293CF19D008F237A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626B293CF19D008F237A /* DataModel.swift */; };
 		E9A8626E293CF46F008F237A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626D293CF46F008F237A /* Constants.swift */; };
 		E9D51FC72942826600ADCADF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D51FC62942826600ADCADF /* Colors.xcassets */; };
@@ -32,7 +32,7 @@
 		E9A86259293CDD22008F237A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A8625C293CDD22008F237A /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		E9A86264293CEEA0008F237A /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
-		E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsChipViewModel.swift; sourceTree = "<group>"; };
+		E9A86269293CF05B008F237A /* TopicChipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipsViewModel.swift; sourceTree = "<group>"; };
 		E9A8626B293CF19D008F237A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E9A8626D293CF46F008F237A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9D51FC62942826600ADCADF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		E9A86266293CEF73008F237A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E9A86269293CF05B008F237A /* TopicsChipViewModel.swift */,
+				E9A86269293CF05B008F237A /* TopicChipsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,7 +221,7 @@
 				E9A8626C293CF19D008F237A /* DataModel.swift in Sources */,
 				E9A86258293CDD21008F237A /* ContentView.swift in Sources */,
 				E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */,
-				E9A8626A293CF05B008F237A /* TopicsChipViewModel.swift in Sources */,
+				E9A8626A293CF05B008F237A /* TopicChipsViewModel.swift in Sources */,
 				E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */,
 				E9A86265293CEEA0008F237A /* ChipModel.swift in Sources */,
 				E9A8626E293CF46F008F237A /* Constants.swift in Sources */,

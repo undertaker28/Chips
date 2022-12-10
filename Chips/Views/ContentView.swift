@@ -47,13 +47,13 @@ struct ContentView: View {
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: Notification.Name("shouldShowButton")), perform: { _ in
-            self.shouldHide = TopicsChipViewModel().shouldShowButton()
+            self.shouldHide = TopicChipsViewModel().shouldShowButton()
         })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(shouldHide: TopicsChipViewModel().shouldShowButton())
+        ContentView(shouldHide: TopicChipsViewModel().shouldShowButton())
     }
 }

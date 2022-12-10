@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopicChipsView: View {
-    @ObservedObject var topicsChipViewModel = TopicsChipViewModel()
+    @ObservedObject var topicsChipViewModel = TopicChipsViewModel()
     var body: some View {
         var width = CGFloat.zero
         var height = CGFloat.zero

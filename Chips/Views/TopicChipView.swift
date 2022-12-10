@@ -10,7 +10,7 @@ import SwiftUI
 struct TopicChipView: View {
     let topicName: String
     let id: Int
-    let topicsChipViewModel: TopicsChipViewModel
+    let topicsChipViewModel: TopicChipsViewModel
     @State var isSelected: Bool
     var body: some View {
         HStack {
@@ -48,7 +48,7 @@ struct TopicChipView_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            TopicChipView(topicName: "Юмор", id: 1, topicsChipViewModel: TopicsChipViewModel(), isSelected: false)
+            TopicChipView(topicName: "Юмор", id: 1, topicsChipViewModel: TopicChipsViewModel(), isSelected: false)
         }
     }
 }
