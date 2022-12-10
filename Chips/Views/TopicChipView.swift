@@ -24,7 +24,6 @@ struct TopicChipView: View {
                     .opacity(isSelected ? 0 : 1)
                 Image(systemName: isSelected ? "checkmark" : "plus")
                     .font(Font.custom("MarkPro-Bold", size: 18))
-                    //.font(.system(size: 18))
                     .foregroundColor(Color.white)
             }
             .padding(.leading, 6)
@@ -38,6 +37,7 @@ struct TopicChipView: View {
         ).onTapGesture {
             isSelected.toggle()
             isSelected ? topicsChipViewModel.addChip(topicName: topicName, id: id) : topicsChipViewModel.removeChip(id: id)
+            NotificationCenter.default.post(name: Notification.Name("shouldShowButton"), object: nil)
         }
         .animation(.easeInOut, value: isSelected)
     }

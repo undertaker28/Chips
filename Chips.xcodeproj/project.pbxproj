@@ -19,7 +19,7 @@
 		E9A8626E293CF46F008F237A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A8626D293CF46F008F237A /* Constants.swift */; };
 		E9D51FC72942826600ADCADF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D51FC62942826600ADCADF /* Colors.xcassets */; };
 		E9F6264E293E27F000F64C30 /* TopicChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264D293E27F000F64C30 /* TopicChipView.swift */; };
-		E9F62650293E446100F64C30 /* TopicsChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264F293E446100F64C30 /* TopicsChipView.swift */; };
+		E9F62650293E446100F64C30 /* TopicChipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6264F293E446100F64C30 /* TopicChipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		E9A8626D293CF46F008F237A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E9D51FC62942826600ADCADF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E9F6264D293E27F000F64C30 /* TopicChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipView.swift; sourceTree = "<group>"; };
-		E9F6264F293E446100F64C30 /* TopicsChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsChipView.swift; sourceTree = "<group>"; };
+		E9F6264F293E446100F64C30 /* TopicChipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicChipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +79,10 @@
 		E9A86254293CDD21008F237A /* Chips */ = {
 			isa = PBXGroup;
 			children = (
-				E94604B92945040D0047B766 /* Fonts */,
 				E9F6264C293E27D800F64C30 /* Views */,
 				E9A86266293CEF73008F237A /* ViewModels */,
 				E9A86263293CEE5A008F237A /* Models */,
+				E94604B92945040D0047B766 /* Fonts */,
 				E9D51FC42942822C00ADCADF /* Resources */,
 				E9A8625B293CDD22008F237A /* PreviewContent */,
 			);
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A86257293CDD21008F237A /* ContentView.swift */,
-				E9F6264F293E446100F64C30 /* TopicsChipView.swift */,
+				E9F6264F293E446100F64C30 /* TopicChipsView.swift */,
 				E9F6264D293E27F000F64C30 /* TopicChipView.swift */,
 			);
 			path = Views;
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F62650293E446100F64C30 /* TopicsChipView.swift in Sources */,
+				E9F62650293E446100F64C30 /* TopicChipsView.swift in Sources */,
 				E9A8626C293CF19D008F237A /* DataModel.swift in Sources */,
 				E9A86258293CDD21008F237A /* ContentView.swift in Sources */,
 				E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */,

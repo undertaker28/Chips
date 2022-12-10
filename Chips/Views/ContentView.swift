@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var shouldHide: Bool
     var body: some View {
         ZStack {
             Color.black
@@ -28,7 +29,7 @@ struct ContentView: View {
                     .cornerRadius(40)
                 }
                 ScrollView {
-                    TopicsChipView()
+                    TopicChipsView()
                 }
                 HStack {
                     Spacer()
@@ -40,15 +41,19 @@ struct ContentView: View {
                             .background(Color.white)
                             .cornerRadius(74)
                     }
+                    .opacity(shouldHide ? 0 : 1)
                     Spacer()
                 }
             }
         }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("shouldShowButton")), perform: { _ in
+            self.shouldHide = TopicsChipViewModel().shouldShowButton()
+        })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(shouldHide: TopicsChipViewModel().shouldShowButton())
     }
 }

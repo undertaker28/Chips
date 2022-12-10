@@ -40,4 +40,9 @@ class TopicsChipViewModel: ObservableObject {
             }
         }
     }
+    
+    func shouldShowButton() -> Bool {
+        let selectedChips: [String: Int] = userDefaults.object(forKey: "selectedChips") as? [String: Int] ?? [:]
+        return selectedChips.isEmpty
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  TopicsChipView.swift
+//  TopicChipsView.swift
 //  Chips
 //
 //  Created by Pavel on 5.12.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TopicsChipView: View {
+struct TopicChipsView: View {
     @ObservedObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         var width = CGFloat.zero
@@ -45,7 +45,7 @@ struct TopicsChipView_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            TopicsChipView()
+            TopicChipsView()
         }
     }
 }
