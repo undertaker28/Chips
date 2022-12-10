@@ -16,7 +16,7 @@
  - SwiftUI
  - MVVM
 
-### Демонстрация работы приложения
+### Демонстрация
 <div align="center">
   <video src="https://user-images.githubusercontent.com/69767713/206874929-71aeff88-73d9-4538-8080-ef8846f16104.mp4"/>
 <div/>
