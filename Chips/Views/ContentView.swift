@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         ZStack {
             Color.black
@@ -16,11 +15,12 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text("Отметьте то, что вам интересно, чтобы настроить Дзен")
+                        .font(Font.custom("WorkSans-Regular", size: 16))
                         .padding(EdgeInsets(top: 16, leading: 16, bottom: 8, trailing: 12))
                         .foregroundColor(Color("Title"))
                     Button(action: {}) {
                         Text("Позже")
-                            .font(.system(size: 16))
+                            .font(Font.custom("MarkPro-Bold", size: 16))
                             .foregroundColor(Color.white)
                     }
                     .padding(EdgeInsets(top: 11, leading: 13, bottom: 11, trailing: 13))
@@ -28,14 +28,13 @@ struct ContentView: View {
                     .cornerRadius(40)
                 }
                 ScrollView {
-                    TopicsChipView(topicsChipViewModel: topicsChipViewModel)
+                    TopicsChipView()
                 }
                 HStack {
                     Spacer()
                     Button(action: {}) {
                         Text("Продолжить")
-                            .bold()
-                            .font(.system(size: 18))
+                            .font(Font.custom("MarkPro-Bold", size: 18))
                             .padding(EdgeInsets(top: 29, leading: 51, bottom: 29, trailing: 51))
                             .foregroundColor(Color.black)
                             .background(Color.white)

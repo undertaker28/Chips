@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E94604BB2945042B0047B766 /* MarkPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E94604BA2945042B0047B766 /* MarkPro-Bold.otf */; };
+		E94604BD294504360047B766 /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E94604BC294504360047B766 /* WorkSans-Regular.otf */; };
 		E9A86256293CDD21008F237A /* ChipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86255293CDD21008F237A /* ChipsApp.swift */; };
 		E9A86258293CDD21008F237A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A86257293CDD21008F237A /* ContentView.swift */; };
 		E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A86259293CDD22008F237A /* Assets.xcassets */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E94604BA2945042B0047B766 /* MarkPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Bold.otf"; sourceTree = "<group>"; };
+		E94604BC294504360047B766 /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
+		E94604C02945064A0047B766 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A86252293CDD21008F237A /* Chips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A86255293CDD21008F237A /* ChipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsApp.swift; sourceTree = "<group>"; };
 		E9A86257293CDD21008F237A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E94604B92945040D0047B766 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E94604BA2945042B0047B766 /* MarkPro-Bold.otf */,
+				E94604BC294504360047B766 /* WorkSans-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E9A86249293CDD21008F237A = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +79,7 @@
 		E9A86254293CDD21008F237A /* Chips */ = {
 			isa = PBXGroup;
 			children = (
+				E94604B92945040D0047B766 /* Fonts */,
 				E9F6264C293E27D800F64C30 /* Views */,
 				E9A86266293CEF73008F237A /* ViewModels */,
 				E9A86263293CEE5A008F237A /* Models */,
@@ -105,6 +120,7 @@
 				E9D51FC52942823800ADCADF /* Assets */,
 				E9A86255293CDD21008F237A /* ChipsApp.swift */,
 				E9A8626D293CF46F008F237A /* Constants.swift */,
+				E94604C02945064A0047B766 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -122,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				E9A86257293CDD21008F237A /* ContentView.swift */,
-				E9F6264D293E27F000F64C30 /* TopicChipView.swift */,
 				E9F6264F293E446100F64C30 /* TopicsChipView.swift */,
+				E9F6264D293E27F000F64C30 /* TopicChipView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D51FC72942826600ADCADF /* Colors.xcassets in Resources */,
+				E94604BB2945042B0047B766 /* MarkPro-Bold.otf in Resources */,
 				E9A8625D293CDD22008F237A /* PreviewAssets.xcassets in Resources */,
 				E9A8625A293CDD22008F237A /* Assets.xcassets in Resources */,
+				E94604BD294504360047B766 /* WorkSans-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +356,7 @@
 				DEVELOPMENT_TEAM = G4T7QK2U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chips/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +386,7 @@
 				DEVELOPMENT_TEAM = G4T7QK2U75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chips/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

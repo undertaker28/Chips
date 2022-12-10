@@ -10,12 +10,12 @@ import SwiftUI
 struct TopicChipView: View {
     let topicName: String
     let id: Int
+    let topicsChipViewModel: TopicsChipViewModel
     @State var isSelected: Bool
-    @StateObject var topicsChipViewModel = TopicsChipViewModel()
     var body: some View {
         HStack {
             Text(topicName)
-                .font(.system(size: 16))
+                .font(Font.custom("MarkPro-Bold", size: 16))
                 .foregroundColor(Color.white)
             HStack {
                 Divider()
@@ -23,7 +23,8 @@ struct TopicChipView: View {
                     .overlay(Color("Divider"))
                     .opacity(isSelected ? 0 : 1)
                 Image(systemName: isSelected ? "checkmark" : "plus")
-                    .font(.system(size: 18))
+                    .font(Font.custom("MarkPro-Bold", size: 18))
+                    //.font(.system(size: 18))
                     .foregroundColor(Color.white)
             }
             .padding(.leading, 6)
@@ -47,7 +48,7 @@ struct TopicChipView_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            TopicChipView(topicName: "Юмор", id: 1, isSelected: false)
+            TopicChipView(topicName: "Юмор", id: 1, topicsChipViewModel: TopicsChipViewModel(), isSelected: false)
         }
     }
 }
